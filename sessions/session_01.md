@@ -7,6 +7,7 @@ Topics.
 - [Concatenation & type coercion](#concatenation)
 - [Math](#math)
 - [Functions](#functions)
+- [objects & arrays](#objects-&-arrays)
 
 ## Data Types
 ```
@@ -169,4 +170,34 @@ function square(num) {
 }
 
 console.log(square(4)) //will log out the return value 16
+```
+
+## Objects & Arrays
+//get a value from an array by it's index
+
+var arr = [1,2,3]
+arr[0] //returns value 1
+arr[2] //returns value 3
+
+//set a value to an index
+arr[0] = 5
+onsole.log(arr) //returns [5,2,3]
+
+## get a value from an object using dot notation
+var person = {
+  firstName: "Samantha",
+  lastName: "Smith"
+}
+
+console.log(person.firstName) // logs out "Samantha"
+
+## set a value
+person.firstName = "John"
+console.log(person) // logs out '{ firstName: "John", lastName: 'Smith'}'
+
+## using square bracket for the key
+console.log(person['firstName']) //logs out "John"
+
+var key = "lastName"
+console.log(person[key]) //logs out "Smith"
 ```
