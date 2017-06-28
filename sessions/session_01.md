@@ -130,6 +130,7 @@ total /= 2 //total is now 4.5
 ```
 
 #functions
+```
 // create a function
 function sayHello() {
   console.log("Hello World")
@@ -183,7 +184,7 @@ arr[2] //returns value 3
 arr[0] = 5
 onsole.log(arr) //returns [5,2,3]
 
-## get a value from an object using dot notation
+// get a value from an object using dot notation
 var person = {
   firstName: "Samantha",
   lastName: "Smith"
@@ -191,11 +192,11 @@ var person = {
 
 console.log(person.firstName) // logs out "Samantha"
 
-## set a value
+// set a value
 person.firstName = "John"
 console.log(person) // logs out '{ firstName: "John", lastName: 'Smith'}'
 
-## using square bracket for the key
+// using square bracket for the key
 console.log(person['firstName']) //logs out "John"
 
 var key = "lastName"
