@@ -2,11 +2,11 @@
 
 Topics.
 - [Data Types (Not all types)](#data-types)
-- Variables
-- Syntax
-- Keywords
-- Values
-- Functions
+- [Variables](#variables)
+- [Syntax & keywords](#syntax)
+- [Concatenation & type coercion](#concatenation)
+- [Math](#math)
+- [Functions](#functions)
 
 ## Data Types
 ```
@@ -21,6 +21,12 @@ Topics.
 45e5
 1.45
 0.05
+
+//Undefined
+undefined
+
+//Not A Number
+NaN
 
 //Arrays
 [1,2,3]
@@ -37,7 +43,7 @@ Topics.
 
 { key : "value"}
 
-{
+var person = {
   firstName: "John",
   lastName: "Appleseed",
   age: 34
@@ -50,7 +56,7 @@ Topics.
 //Declare variables
 var fruit, animal, name;
 
-//Set Variables
+//Set Variables (Assignment)
 fruit = "apple"
 animal = "dog"
 name = "Alexander"
@@ -67,4 +73,100 @@ var first_name = "John"
 
 // don't start with an invalid symbol like a number
 var 1firstName = "Samantha" // error!
+```
+
+## Syntax
+```
+// Comments, this is a comment in JavaScript
+
+// reserved keywords, you can't use these to name functions or variables
+function
+var
+this
+return
+```
+
+## Concatenation
+```
+// Joining strings together with concatenation
+var firstName = "John"
+var lastName = "Smith"
+
+var fullName = firstName + " " + lastName // => 'John Smith'
+
+var speech = "I " + firstName + ", likes Javascript" // => 'I John, likes JavaScript'
+
+// Type coercion, turns a string into a number
+var result = 1 - '1' // 0
+
+result = 1 - `1cat' // returns NaN (Not a number!)
+
+```
+
+#Math
+```
+//add, multiply, divide, subtract
+var result = 1 + 1 // result is 2
+
+result = 2 * 10 //result is now 20
+
+result = 5 / 2 //result is now 2.5
+
+result = 5 - 1 //result is now 4
+
+//addition assignment operator
+var total = 0
+total = total + 1 //total is now 1
+
+//or using the addition assignment operator
+total += 1 //total is now 2
+total += 2 //total is now 4
+
+//other assignment operators
+total -= 1 //total is now 3
+total *= 3 //total is now 9
+total /= 2 //total is now 4.5
+```
+
+#functions
+// create a function
+function sayHello() {
+  console.log("Hello World")
+}
+
+//Call/Invoke a function
+sayHello()
+
+//Don't invoke a function
+sayHello //won't do anything
+
+//Have a function have it's own variable/scope
+function sayHello() {
+  var comment = "Hello World"
+  console.log(comment)
+}
+
+//Have a function use a variable outside of it's scope
+var hello = "Hello World"
+
+function sayhello() {
+  console.log(hello) //this will look for hello outside of its scope
+}
+
+//Have a function give you back or 'return' you a value
+function sayHello() {
+  return "Hello World"
+}
+
+console.log(sayHello()) //will log out "Hello world"
+
+//vs not invoking the function
+console.log(sayHello) //will log out the 'function' itself and not the return value
+
+//Using a parameter
+function square(num) {
+  return num * num
+}
+
+console.log(square(4)) //will log out the return value 16
 ```
