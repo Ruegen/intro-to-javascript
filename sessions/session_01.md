@@ -7,7 +7,7 @@ Topics.
 - [Concatenation & type coercion](#concatenation)
 - [Math](#math)
 - [Functions](#functions)
-- [objects & arrays](#objects-&-arrays)
+- [Objects & arrays](#objects-&-arrays)
 
 ## Data Types
 ```
@@ -183,7 +183,7 @@ arr[2] //returns value 3
 
 //set a value to an index
 arr[0] = 5
-onsole.log(arr) //returns [5,2,3]
+console.log(arr) //returns [5,2,3]
 
 // get a value from an object using dot notation
 var person = {
