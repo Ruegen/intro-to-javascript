@@ -104,7 +104,7 @@ result = 1 - `1cat' // returns NaN (Not a number!)
 
 ```
 
-#Math
+## Math
 ```
 //add, multiply, divide, subtract
 var result = 1 + 1 // result is 2
@@ -129,7 +129,7 @@ total *= 3 //total is now 9
 total /= 2 //total is now 4.5
 ```
 
-#functions
+## Functions
 ```
 // create a function
 function sayHello() {
@@ -174,6 +174,7 @@ console.log(square(4)) //will log out the return value 16
 ```
 
 ## Objects & Arrays
+```
 //get a value from an array by it's index
 
 var arr = [1,2,3]
