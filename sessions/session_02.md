@@ -134,7 +134,7 @@ while(counter < 100) {
 }
 ```
 
-## Do loop
+## Do while loop
 ```
 var counter = 0
 do {
