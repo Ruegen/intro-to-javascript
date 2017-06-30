@@ -72,9 +72,9 @@ var food = 'apple'
 
 switch(food) {
     case 'banana':
-        console.log('you got a banana!')
+        console.log('you got a Banana!')
         break;
-    case 'Apple':
+    case 'apple':
         console.log('you got an Apple!')
         break;
     default:
